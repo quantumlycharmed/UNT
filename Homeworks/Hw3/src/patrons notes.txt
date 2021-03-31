@@ -1,0 +1,55 @@
+
+int choicePatrons = -1;
+
+		while (choicePatrons != 0)
+		{
+			cout << "This is the beginning of Patrons. Please read the Menu and tell me what you'd like to do." << endl;
+
+			cout << "MENU" << endl;
+			cout << "0.) Quit" << endl;
+			cout << "1.) Add Patrons" << endl;
+			cout << "2.) Edit Patrons" << endl;
+			cout << "3.) Delete Patrons" << endl;
+			cout << "4.) Search Patrons" << endl;
+			cout << "5.) Print Patrons" << endl;
+			cout << "6.) Load Patrons" << endl;
+			cout << "7.) Store Patrons" << endl;
+
+			cin >> choicePatrons;
+
+			switch (choicePatrons)
+			{
+
+			case 1:
+
+				cout << "Add Patrons." << endl;
+				shelf.addBooks();
+				break;
+			case 2:
+				cout << "Edit Patrons." << endl;
+				shelf.editBooks();
+				break;
+			case 3:
+				cout << "Delete Patrons." << endl;
+				shelf.deleteBooks();
+				break;
+			case 4:
+				cout << "Search Patrons." << endl;
+				shelf.searchBooks();
+				break;
+			case 5:
+				cout << "Print Patrons." << endl;
+				shelf.printBooks();
+				break;
+			case 6:
+				cout << "Load Patrons." << endl;
+				shelf.loadBooks();
+				break;
+			case 7:
+				cout << "Store Patrons." << endl;
+				shelf.storeBooks();
+				break;
+
+			default:
+				break;
+			}

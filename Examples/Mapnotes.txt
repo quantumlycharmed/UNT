@@ -1,0 +1,26 @@
+Map Notes:
+
+needs #include <map>
+
+basic declaration:
+map<k, y> newMap;
+k = key type
+y = value type
+
+funtions:
+newMap.emplace("TX", data); //associates a key with specified value <TX assoc data>
+newMap.count("TX"); //returns 1 if key exists 0 otherwise
+newMap.at(key); //returns entry associated with key
+newMap.erase(key); //erases map entry for key if exists
+newMap.clear(); removes all map entries
+can also access entries like an array newMap["key"]
+
+ex:
+map< string, int> newMap;
+newMap.at("TX"); //retuns data
+
+can update this value by:
+newMap.at("TX") = newData; //now returns newData
+
+
+

@@ -1,0 +1,8 @@
+//test data
+Paliminio
+200
+Bob
+M
+N
+gh67
+Black and tan

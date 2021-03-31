@@ -1,0 +1,44 @@
+List Notes:
+
+uses header file #include<list>
+
+basic definition syntax:
+list<type>name;
+
+functions defined in list:
+name.push_back(" "); //appends to end of list
+name.push_front(" "); //pushes value to front of list
+name.pop_back(); //erases entry at end of list
+name.front(); //returns beginning value
+name.back(); //returns ending value
+name.remove(" "); //removes instance of parameter
+name.size() //return size of list
+name.begin(); //uses an iterator with list function to return iterator to front
+name.end(); //same as above but end of list
+name.insert(iterator, "value"); //puts value at location of iterator
+name.erase(iterator, "value"); //erases value at location of iterator
+iterator:
+
+list<type>::iterator iter //sytnax
+
+can set where iter is located using above functions
+i.e.
+iter = name.begin();//the iterator is at the beginning of the list
+rtnVal = *iter; //gives the value at that location
+
+example code:
+
+list<int> numbersList;
+list<int>::iterator numberIterator;
+
+numbersList.push_back(3);
+numbersList.push_back(1);
+numbersList.push_back(4);
+
+numberIterator = numbersList.begin();
+
+numbersList.insert(numberIterator, 6);
+
+numberIterator++;
+numbersList.erase(numberIterator);
+

@@ -1,0 +1,21 @@
+Pair Notes:
+
+needs #include <utility>
+
+Basic Declaration:
+pair<f, s> newPair;
+f = first element type
+s = second elemend type
+
+Functions:
+newPair.make_pair()
+newPair.first = somevalue;
+newPair.second = somevalue;
+
+ex:
+pair<int, string>newPair;
+newPair.make_pair(2, "Shane");
+
+newPair.first = 3;
+cout << newPair << endl; //print 3, Shane
+

@@ -1,0 +1,53 @@
+Linked Lists:
+
+a dynamic collection that has data variable(s) and pointer named
+next in each node
+the pointer points to the next node
+we keep track of the head or starting node
+head points to nothing at first till the 1st node is established
+the variables in a LL should be private with the ways to manipulate those
+variable coming from public methods namely sets and gets
+ basic syntax 
+
+  class IntNode{
+    private:
+      int Data;
+      IntNode *next;//IntNode type pointer
+      int tempNext; //temp variable to help with manipulation
+
+    public:
+      int getData(){return this->Data}
+      void setData(int x) {this->Data = x;}
+
+      IntNode *getPtr() {return this->next}
+
+      void setPtr(IntNode *PTR)
+      {
+        IntNode *tempNext = nullptr;
+
+        tmpNext = this->next;
+        this->next = PTR;
+        PTR->PTR = tempNext;
+      }
+
+      IntNode(int DataVal, IntNode *PTR)
+       {
+        this->Data = DataVal;
+        this->next = PTR;
+       }
+      void printNodeData() { cout << this-> Data << endl;}
+
+    int main(){
+
+    IntNode* headObj = nullptr; // Create intNode objects
+    IntNode* secondObj = nullptr;
+    IntNode* lastObj = nullptr;
+
+    headObj = new IntNode(-1);        // Front of nodes list
+
+    secondObj = new IntNode(2);
+    headObj->next(secondObj);
+
+    lastObj = headObj;
+
+    }
